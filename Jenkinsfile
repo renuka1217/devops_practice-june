@@ -4,6 +4,9 @@ pipeline {
     environment {
         IMAGE_NAME = 'renuka1217/sales-module'
         IMAGE_TAG = 'latest'
+        DOCKER_USER = 'renuka1217'
+        DOCKER_PASS = 'LMC86_pnsGmk?5Q'
+
     }
 
     stages {
