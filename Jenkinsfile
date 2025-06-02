@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'https://hub.docker.com/repositories/renuka1217/sales-module'
+        IMAGE_NAME = 'renuka1217/sales-module'
         IMAGE_TAG = 'latest'
     }
 
