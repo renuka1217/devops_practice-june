@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'renuka1217/sales-module'
+        IMAGE_NAME = 'sales-module'
         IMAGE_TAG = 'latest'
         DOCKER_REGISTRY = 'renuka1217' // or private registry
         DOCKER_USER = 'renuka1217'
