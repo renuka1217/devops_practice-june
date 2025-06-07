@@ -4,6 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'renuka1217/sales-module'
         IMAGE_TAG = 'latest'
+        DOCKER_REGISTRY = 'renuka1217' // or private registry
         DOCKER_USER = 'renuka1217'
         DOCKER_PASS = 'LMC86_pnsGmk?5Q'
 
