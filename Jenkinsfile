@@ -16,12 +16,9 @@ pipeline {
             }
         }
 
-        stage('Docker Build') {
-            steps {
-                script {
-                    dockerImage = docker.build("${IMAGE_NAME}:${IMAGE_TAG}")
-                }
-                // Add build steps like `mvn clean install` or `npm install`
+      stage('Docker Build') {
+          steps {
+			  sh "docker build -t ${DOCKER_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} ."
             }
         }
         stage('Docker Login & Push') {
